@@ -13,4 +13,12 @@ interface RepositoryMhs {
 
     //Method ini memanfaatkan fungsi insertMahasiswa dari MahasiswaDao
     suspend fun insertMhs(mahasiswa: Mahasiswa)
+
+    //Method ini memanfaatkan fungsi deleteMahasiswa dari MahasiswaDao
+    suspend fun deleteMhs(mahasiswa: Mahasiswa)
+
+    //Method ini memanfaatkan fungsi updateMahasiswa dari MahasiswaDao
+    suspend fun updateMhs(mahasiswa: Mahasiswa)
+
+
 }
