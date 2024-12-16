@@ -19,5 +19,14 @@ class LocalRepositoryMhs(
         mahasiswaDao.updateMahasiswa(mahasiswa)
     }
 
+    override fun getAllMhs(): Flow<List<Mahasiswa>> {
+        return mahasiswaDao.getAllMahasiswa()
+
+    }
+    override fun getMhs(nim: String): Flow<Mahasiswa> {
+        return mahasiswaDao.getMahasiswa(nim)
+
+    }
+
 
 }
