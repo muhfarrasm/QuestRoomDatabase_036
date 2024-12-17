@@ -1,23 +1,23 @@
 package com.example.mvvmdatabase.ui.navigation
 
 interface AlamatNavigasi {
-    val route: String
+    val route : String
 }
 
-object DestinasiHome : AlamatNavigasi{
+object DestinasiHome : AlamatNavigasi {
     override val route = "home"
 }
 
 object DestinasiDetail : AlamatNavigasi {
     override val route = "detail"
     const val NIM = "nim"
-    val  routesWithArg = "$route/{$NIM"
+    val routeWithArgs = "$route/{$NIM}"
 }
 
 object DestinasiUpdate : AlamatNavigasi {
     override val route = "update"
     const val NIM = "nim"
-    val routesWithArg = "$route/{$NIM}"
+    val routeWithArgs = "$route/{$NIM}"
 }
 
 object DestinasiEdit : AlamatNavigasi {

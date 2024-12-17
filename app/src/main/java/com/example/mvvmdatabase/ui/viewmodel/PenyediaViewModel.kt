@@ -38,8 +38,6 @@ object PenyediaViewModel{
             )
         }
 
-
-
     }
 }
 

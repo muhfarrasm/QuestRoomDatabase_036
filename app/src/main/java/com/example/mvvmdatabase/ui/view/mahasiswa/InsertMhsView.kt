@@ -40,8 +40,6 @@ import com.example.mvvmdatabase.ui.viewmodel.PenyediaViewModel
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.launch
 
-
-@Preview(showBackground = true)
 @Composable
 fun FormMahasiswa(
     mahasiswaEvent: MahasiswaEvent = MahasiswaEvent(),
@@ -65,7 +63,6 @@ fun FormMahasiswa(
             isError = errorState.nama != null,
             placeholder = { Text("Masukkan nama") },
         )
-
         Text(
             text = errorState.nama ?: "",
             color = Color.Red
@@ -87,7 +84,6 @@ fun FormMahasiswa(
             color = Color.Red
         )
 
-        Spacer(modifier = Modifier.height(16.dp))
         Text(text = "Jenis Kelamin")
         Row (
             modifier = Modifier.fillMaxWidth()
@@ -116,8 +112,6 @@ fun FormMahasiswa(
             color = Color.Red
         )
 
-
-        Spacer(modifier = Modifier.height(16.dp))
         OutlinedTextField(
             modifier = Modifier.fillMaxWidth(),
             value = mahasiswaEvent.alamat,
@@ -133,8 +127,6 @@ fun FormMahasiswa(
             text = errorState.alamat ?: "",
             color = Color.Red
         )
-
-        Spacer(modifier = Modifier.height(16.dp))
         Text(text = "Kelas")
         Row (
             modifier = Modifier.fillMaxWidth()
@@ -180,8 +172,6 @@ fun FormMahasiswa(
 
     }
 }
-
-
 @Composable
 fun InsertBodyMhs(
     modifier: Modifier = Modifier,
@@ -204,7 +194,7 @@ fun InsertBodyMhs(
             onClick = onClick,
             modifier = Modifier.fillMaxWidth(),
         ) {
-            Text("Simpan")
+            Text(text = "Simpan")
         }
     }
 
@@ -232,8 +222,6 @@ fun InsertMhsView(
             }
         }
     }
-
-
     Scaffold(
         modifier = modifier,
         snackbarHost = { SnackbarHost(hostState = snackBarHostState) }
@@ -242,7 +230,7 @@ fun InsertMhsView(
             modifier = Modifier
                 .fillMaxSize()
                 .padding(padding)
-                .padding(16.dp)
+                .padding(12.dp)
         ) {
             TopAppBar(
                 onBack = onBack,

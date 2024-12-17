@@ -64,7 +64,7 @@ fun UpdateMhsView(
         Column (
             modifier = Modifier.padding(padding)
                 .fillMaxSize()
-                .padding(16.dp)
+                .padding(4.dp)
         ){
             InsertBodyMhs(
                 uiState = uiState,

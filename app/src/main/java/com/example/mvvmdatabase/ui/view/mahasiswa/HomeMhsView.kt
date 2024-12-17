@@ -53,10 +53,11 @@ fun CardMhs(
     onClick : () -> Unit ={ }
 ){
     Card (
-        onClick = onClick,
+
         modifier = modifier
             .fillMaxWidth()
-            .padding(8.dp)
+            .padding(8.dp),
+        onClick = onClick
     ){
         Column (
             modifier = Modifier.padding(8.dp)
@@ -186,7 +187,7 @@ fun BodyHomeMhsView(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
+
 @Composable
 fun HomeMhsView(
     viewModel: HomeMhsViewModel = viewModel(factory = PenyediaViewModel.Factory),

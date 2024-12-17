@@ -22,8 +22,7 @@ fun TopAppBar(
 ) {
     Box(
         modifier = Modifier
-            .fillMaxWidth()
-            .padding(16.dp),
+            .fillMaxWidth(),
         contentAlignment = Alignment.Center // Pastikan konten di tengah
     ) {
         if (showBackButton) {
@@ -37,14 +36,14 @@ fun TopAppBar(
                 ) {
                     Text("Kembali")
                 }
-                Spacer(modifier = Modifier.weight(2f))
+
             }
         }
 
         // Teks judul
         Text(
             text = judul,
-            fontSize = 25.sp,
+            fontSize = 20.sp,
             fontWeight = FontWeight.Bold,
             modifier = Modifier.align(Alignment.Center)
         )

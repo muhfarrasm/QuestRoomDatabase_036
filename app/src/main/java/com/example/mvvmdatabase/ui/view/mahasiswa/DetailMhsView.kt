@@ -219,7 +219,7 @@ fun DetailMhsView(
             }
         }
     ) {
-            innerPadding ->
+        innerPadding ->
         val detailUiState by viewModel.detailUiState.collectAsState()
 
         BodyDetailMhs(
