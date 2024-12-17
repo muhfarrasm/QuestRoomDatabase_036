@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.mvvmdatabase.data.entity.Mahasiswa
 import com.example.mvvmdatabase.repository.RepositoryMhs
+import com.example.mvvmdatabase.ui.navigation.DestinasiEdit
 import com.example.mvvmdatabase.ui.navigation.DestinasiUpdate
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.first
